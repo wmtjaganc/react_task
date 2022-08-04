@@ -1,0 +1,35 @@
+@import 'https://fonts.googleapis.com/css?family=Righteous';
+
+.style_header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+}
+
+.style_logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: calc(60 / 16 * 1rem);
+    position: relative;
+    width: auto;
+    left: 0;
+}
+.logoName {
+    font-family: Righteous, sans-serif;
+    font-weight: 400;
+    white-space: normal;
+    object-fit: fill;
+    font-size: 35px;
+    cursor: pointer;
+    line-height: 28px;
+}
+
+@media (max-width: 991px){
+.style_logo {
+  justify-content: center;
+  align-items: center;
+}
+}

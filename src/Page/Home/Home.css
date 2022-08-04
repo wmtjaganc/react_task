@@ -1,0 +1,160 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins';
+
+.full_hd{
+    width: 100vw;
+    min-height: calc(700 / 16 * 1rem);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Assets/Images/home.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_h1{
+    justify-content: center;
+    font-size: calc(50 / 16 * 1rem);
+    line-height: calc(75 / 16 * 1rem);
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.text_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 calc(5px * 3);
+}
+.container_home {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    padding: 0 calc(5px * 2);
+}
+.text_style_info{
+    margin-top: 24px;
+    font-size: calc(18 / 16 * 1rem);
+    width: 50%;
+    text-align: center;
+    line-height: 2rem;
+}
+.card{
+    margin-top: 68px;
+    margin-bottom: 24px;
+    background-color: #fff;
+    height: max-content;
+    border-radius: 8px;
+    padding: 24px 54px;
+    color: #000;
+    font-family: Poppins,sans-serif;
+}
+.card_header{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.name_info{
+    display: flex;
+    align-items: center;
+}
+.link_ebay{
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 6px;   
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.input_style{
+    margin-top: 22px;
+    width: 90%;
+    border-radius: 50px;
+    border: 1px solid #e8e8e8 !important;
+    padding: 12px 22px;
+}
+.btn_submit{
+    background-color: #3760EF;
+    border: none;
+    color: #fff;
+    padding: 11px 64px;
+    border-radius: 50px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.error_style{
+    margin-top: 8px;
+    color: red;
+    font-size: 12px;
+    margin-left: 12px;
+    text-align: start;
+}
+.card_detail_info{
+    margin: 12px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+}
+.card-body{
+    width: 50%;
+    padding: 12px 12px 12px 38px;
+    position: relative;
+    text-align: justify;
+}
+.divider{
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 24px;
+  }
+    
+@media (max-width:991px){
+    .full_hd{
+        background-image: url('../../Assets/Images/home_mobile.png');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        padding-top: 42px;
+    }
+    .container_home {
+        max-width: 100%;
+        padding: 0px;
+        text-align: start;
+    }
+    .card{
+        width: auto;
+        background-color: #fff;
+        border-radius: 8px;
+        margin: 8px;
+        padding: 12px 18px;
+    }
+    .text_wrap{
+        display: block;
+    }
+    .card_header{
+        width: 100%;
+    }
+    .card_detail_info{
+        margin: 12px;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-body{
+        width: 90%;
+        padding: 12px 12px;
+        position: relative;
+    }
+    .divider{
+        width: 100%;
+        position: relative;
+        bottom: none;
+        margin-bottom: 24px;
+      }
+
+}
